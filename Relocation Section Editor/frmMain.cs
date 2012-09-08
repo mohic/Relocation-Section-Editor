@@ -77,6 +77,7 @@ namespace Relocation_Section_Editor
                 cmnuPages.Enabled = true;
                 cmnuRelocations.Enabled = true;
                 mnuMainFileSaveAs.Enabled = true;
+                mnuMainFileSave.Enabled = true;
             }
             catch (FileNotFoundException)
             {
@@ -188,6 +189,7 @@ namespace Relocation_Section_Editor
             cmnuPages.Enabled = false;
             cmnuRelocations.Enabled = false;
             mnuMainFileSaveAs.Enabled = false;
+            mnuMainFileSave.Enabled = false;
 
             if (!string.IsNullOrEmpty(argPath))
                 mnuMainFileOpen_Click(null, null);
